@@ -9,9 +9,9 @@
 using namespace std;
 
     
-class Person
+struct Person
 {
-public:
+
     string name, surname;
     optional <string>patronymic;
 
