@@ -9,9 +9,9 @@
 using namespace std;
 
     
-class Person
+struct Person
 {
-public:
+
     string name, surname;
     optional <string>patronymic;
 
@@ -51,7 +51,7 @@ int main()
     cout << boolalpha << (p1 <= p2) << endl;
    
     tuple<string, string, string> tuple1("Толстой  ", "Лев  ", "Николаевич");
-    auto tuple2 = make_tuple("Петров  ", "Олег  ", "Иванович");
+    auto tuple2 = make_tuple("Есенин  ", "Сергей  ", "Александрович");
     
     string n, s, p;
     tie(s, n, p) = tuple1;
